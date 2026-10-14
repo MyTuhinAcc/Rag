@@ -1,0 +1,27 @@
+[project]
+name = "r"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Tuhin", email = "bt727907@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.5.9",
+    "faiss-cpu>=1.15.1",
+    "ipykernel>=7.3.0",
+    "langchain>=1.4.1",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.3",
+    "pymupdf>=1.28.2",
+    "pypdf>=6.19.0",
+    "sentence-transformers>=6.1.0",
+]
+
+[project.scripts]
+r = "r:main"
+
+[build-system]
+requires = ["uv_build>=0.12.16,<0.13.0"]
+build-backend = "uv_build"
